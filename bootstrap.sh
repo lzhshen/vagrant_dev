@@ -10,5 +10,6 @@ sudo yum -y install python36u-pip
 sudo yum -y install python36u-devel
 sudo yum install -y epel-release
 sudo yum -y install ansible
-
 sudo pip3.6 install virtualenv
+
+sudo yum -y tmux

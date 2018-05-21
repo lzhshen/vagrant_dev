@@ -1,0 +1,8 @@
+---
+- name: copy tmux configuration file
+  copy:
+    src: ./files/tmux.conf
+    dest: "/home/{{ user }}/.tmux.conf"
+    owner: "{{ user }}"
+    group: "{{ user }}" 
+    mode: 0644
