@@ -13,3 +13,4 @@ sudo yum -y install ansible
 sudo pip3.6 install virtualenv
 
 sudo yum -y tmux
+sudo yum -y vim
