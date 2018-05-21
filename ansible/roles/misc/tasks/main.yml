@@ -6,3 +6,11 @@
     owner: "{{ user }}"
     group: "{{ user }}" 
     mode: 0644
+
+- name: copy vimrc
+  copy:
+    src: ./files/vimrc
+    dest: "/home/{{ user }}/.vimrc"
+    owner: "{{ user }}"
+    group: "{{ user }}" 
+    mode: 0644
