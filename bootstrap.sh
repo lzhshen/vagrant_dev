@@ -14,3 +14,5 @@ sudo pip3.6 install virtualenv
 
 sudo yum -y tmux
 sudo yum -y vim
+sudo yum -y net-tools
+sudo yum -y openssl-devel

@@ -1,0 +1,5 @@
+---
+stunnel_base_dir: "/home/vagrant"
+stunnel_home: "{{ stunnel_base_dir }}/stunnel-5.2.0"
+user: vagrant
+group: vagrant

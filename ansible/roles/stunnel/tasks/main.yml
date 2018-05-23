@@ -1,0 +1,22 @@
+---
+
+- name: Create stunnel home directory
+  file: name={{ stunnel_home }} state=directory owner={{ user }}
+
+- name: Extract stunnel tar ball into stunnel home
+  unarchive:
+    src: stunnel-5.2.0.tar.gz 
+    dest: '{{ stunnel_base_dir }}'
+    owner: '{{ user }}'
+    group: '{{ group }}'
+
+- name: template stunnel configuration file
+  template:
+    src: stunnel.conf.j2
+    dest: '{{ stunnel_home }}/etc/stunnel/stunnel.conf'
+    owner: '{{ user }}'
+    group: '{{ group }}'
+    mode: 0644
+
+- name: start stunnel service
+  shell: "{{ stunnel_home }}/bin/stunnel {{ stunnel_home }}/etc/stunnel/stunnel.conf"
