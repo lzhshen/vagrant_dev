@@ -1,9 +1,6 @@
-user: "vagrant"
-#java_version: "7u51-2.4.*"
-#spark_env_extras:
-#  TEST_B: "b"
-#  TEST_A: "a"
-#spark_defaults_extras:
-#  "spark.eventLog.enabled": "true"
-#  "spark.eventLog.disabled": "true"
-#
+spark_parent_dir: "/home/vagrant/spark/"
+java_oracle_parent_install_dir: "/home/vagrant/java/jdk/"
+java_oracle_jre_home: "/home/vagrant/java/jre/"
+proxy_env:
+  http_proxy: http://127.0.0.1:8780
+  https_proxy: http://127.0.0.1:8780

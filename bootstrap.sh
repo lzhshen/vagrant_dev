@@ -16,3 +16,4 @@ sudo yum -y tmux
 sudo yum -y vim
 sudo yum -y net-tools
 sudo yum -y openssl-devel
+#sudo yum -y java-1.8.0-openjdk.x86_64

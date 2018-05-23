@@ -3,4 +3,4 @@
   vars_files:
     - group_vars/all.yml
   roles:
-    - stunnel
+    - andrewrothstein.spark
